@@ -118,6 +118,7 @@ button {
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: translateY(14px);
 
   display: block;
   width: 100%;
@@ -147,6 +148,7 @@ button {
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: translateY(14px);
 
   display: block;
   width: 100%;
@@ -435,19 +437,7 @@ button {
   display: flex;
 }
 .company-social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 16px;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color var(--timing-duration) var(--timing-function);
-}
-.company-social-item:hover,
-.company-social-item:focus {
-  background-color: #31d0aa;
 }
 .company-social-item:last-child {
   margin-right: 0;
@@ -455,9 +445,18 @@ button {
 .company-social-link {
   display: block;
   padding: 8px;
-
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--timing-duration) var(--timing-function);
   color: var(--cloud-color);
 }
+.company-social-link:hover,
+.company-social-link:focus {
+  background-color: #31d0aa;
+}
+
 .company-social-icon {
   fill: currentColor;
 }
